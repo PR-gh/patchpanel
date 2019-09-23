@@ -1,0 +1,5 @@
+{
+    "editor.tabSize": 3,
+    "phpSniffer.executablesFolder": "vendor\\bin\\",
+    "phpSniffer.standard": "vendor\\glpi-project\\coding-standard\\GlpiStandard\\"
+}

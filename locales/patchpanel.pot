@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-23 15:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: front/item_patchpanel.form.php:52
+#, php-format
+msgid "Auto-created with Patch Panel : %1$s"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:121
+msgid "Patch Panel Network Outlet"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:129
+msgid "Auto Create Netpoint"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:140
+msgid "Patch Panel Network Outlet - Opposite"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:308
+msgid "Not implemented."
+msgstr ""
+
+#: inc/item_patchpanel.class.php:345
+msgid "Physical Connection"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:345
+msgid "Logical Connection"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:448
+msgid "Add Patch Panel Port"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:461
+msgid "Patch Panel Ports"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:468
+msgid "Opposite"
+msgstr ""
+
+#: inc/item_patchpanel.class.php:487 inc/item_patchpanel.class.php:524
+msgid "Link broken"
+msgstr ""
+
+#: inc/patchpanel.class.php:52
+msgid "Patch panel"
+msgid_plural "Patch panels"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/patchpanelmodel.class.php:37
+msgid "Patch Panel model"
+msgid_plural "Patch Panel models"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/patchpaneltype.class.php:37
+msgid "Patch Panel type"
+msgid_plural "Patch Panel types"
+msgstr[0] ""
+msgstr[1] ""
