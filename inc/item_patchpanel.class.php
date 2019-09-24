@@ -335,8 +335,7 @@ class PluginPatchpanelItem_Patchpanel extends CommonDBRelation {
                            AND n.`itemtype` = '$itemtype'
                            AND n.`instantiation_type` = '$portType'
                            AND n.`is_deleted` = 0
-                     ORDER BY n.`name`,
-                              n.`logical_number`";
+                     ORDER BY n.`logical_number`, n.`name`";
             if ($result = $DB->request($query)) {
                $number_port = $result->numrows();
                if ($number_port != 0) {

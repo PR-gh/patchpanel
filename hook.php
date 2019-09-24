@@ -54,7 +54,7 @@ function plugin_patchpanel_install() {
                   `is_template` tinyint(1) NOT NULL DEFAULT '0',
                   `template_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
                   `groups_id_tech` int(11) NOT NULL DEFAULT '0',
-                  `plugin_patchpanel_patchpanelmodels_id` int(11) NOT NULL DEFAULT '0',
+                  `pluginpatchpanelpatchpanelmodels_id` int(11) NOT NULL DEFAULT '0',
                   `otherserial` VARCHAR(255) NOT NULL,
                   `users_id` VARCHAR(255) NOT NULL,
                   `networks_id` VARCHAR(255) NOT NULL,
@@ -71,7 +71,7 @@ function plugin_patchpanel_install() {
                   KEY `users_id_tech` (`users_id_tech`),
                   KEY `manufacturers_id` (`manufacturers_id`),
                   KEY `groups_id_tech` (`groups_id_tech`),
-                  KEY `plugin_patchpanel_patchpanelmodels_id` (`plugin_patchpanel_patchpanelmodels_id`),
+                  KEY `pluginpatchpanelpatchpanelmodels_id` (`pluginpatchpanelpatchpanelmodels_id`),
                   KEY `is_deleted` (`is_deleted`),
                   KEY `is_template` (`is_template`),
                   KEY `groups_id` (`groups_id`),
@@ -82,10 +82,6 @@ function plugin_patchpanel_install() {
    }
    if ($DB->fieldExists("glpi_plugin_patchpanel_patchpanels", "pluginpatchpanelpatchpaneltypes_id")) {
       $query = "ALTER TABLE glpi_plugin_patchpanel_patchpanels CHANGE pluginpatchpanelpatchpaneltypes_id plugin_patchpanel_patchpaneltypes_id int(11) DEFAULT 0 NOT NULL;";
-      $DB->queryOrDie($query, $DB->error());
-   }
-   if ($DB->fieldExists("glpi_plugin_patchpanel_patchpanels", "pluginpatchpanelpatchpanelmodels_id")) {
-      $query = "ALTER TABLE glpi_plugin_patchpanel_patchpanels CHANGE pluginpatchpanelpatchpanelmodels_id plugin_patchpanel_patchpanelmodels_id int(11) DEFAULT 0 NOT NULL;";
       $DB->queryOrDie($query, $DB->error());
    }
 
