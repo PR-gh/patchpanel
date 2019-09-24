@@ -48,7 +48,7 @@ if (isset($_POST['update'])) {
       $patchPanel->getFromDB($_POST['pluginpatchpanelpatchpanel_id']);
       $inputNetpoint = [
          'name' => $patchPanel->fields['name']. ' - '.$_POST["name"],
-         'location_id' => $patchPanel->fields['location_id'],
+         'locations_id' => $patchPanel->fields['locations_id'],
          'comment' => sprintf(__('Auto-created with Patch Panel : %1$s', 'patchpanel'), $patchPanel->fields['name']),
       ];
       $netpoint = new Netpoint();
@@ -72,7 +72,7 @@ if (isset($_POST['update'])) {
       unset($input['create_netpoint']);
 
       for ($i=$_POST["from_logical_number"]; $i<=$_POST["to_logical_number"]; $i++) {
-         $add = "";
+         $add = " - ";
          if ($i < 10) {
             $add = "0";
          }
@@ -81,7 +81,7 @@ if (isset($_POST['update'])) {
          unset($ipp->fields["id"]);
 
          if (isset($_POST["create_netpoint"])) {
-            $inputNetpoint['name'] = $patchPanel->fields['name']. ' - '.$input["name"];
+            $inputNetpoint['name'] = $input["name"];
             $idNetpoint = $netpoint->add($inputNetpoint);
             $input['netpoints_id'] = $idNetpoint;
          }
