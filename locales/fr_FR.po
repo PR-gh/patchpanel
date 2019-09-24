@@ -45,6 +45,14 @@ msgstr "Connexion physique"
 msgid "Logical Connection"
 msgstr "Connexion logique"
 
+#: inc/item_patchpanel.class.php:390
+msgid "Patch Panel"
+msgstr "Bandeau de prise"
+
+#: inc/item_patchpanel.class.php:390
+msgid "Opposite Patch Panel"
+msgstr "Branchement oppos&eacute;"
+
 #: inc/item_patchpanel.class.php:448
 msgid "Add Patch Panel Port"
 msgstr "Ajouter un port"

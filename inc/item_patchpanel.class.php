@@ -387,7 +387,7 @@ class PluginPatchpanelItem_Patchpanel extends CommonDBRelation {
     */
    static function showItemsNetpoint(Netpoint $netpoint) {
       echo '<table class="tab_cadre_fixehov">';
-      echo '<thead><th>Patch Panel</th><th>Opposite Patch Panel</th></thead>';
+      echo '<thead><th>'.__('Patch Panel', 'patchpanel').'</th><th>'.__('Opposite Patch Panel', 'patchpanel').'</th></thead>';
       echo '<tbody><tr><td>';
       $ipp = new self();
       $pp = new PluginPatchpanelPatchpanel();

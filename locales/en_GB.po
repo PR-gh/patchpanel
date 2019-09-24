@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-23 15:57+0200\n"
-"PO-Revision-Date: 2019-09-23 15:57+0200\n"
+"POT-Creation-Date: 2019-09-24 14:06+0200\n"
+"PO-Revision-Date: 2019-09-24 14:06+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en_GB\n"
@@ -45,6 +45,14 @@ msgstr "Physical Connection"
 #: inc/item_patchpanel.class.php:345
 msgid "Logical Connection"
 msgstr "Logical Connection"
+
+#: inc/item_patchpanel.class.php:390
+msgid "Patch Panel"
+msgstr "Patch Panel"
+
+#: inc/item_patchpanel.class.php:390
+msgid "Opposite Patch Panel"
+msgstr "Opposite Patch Panel"
 
 #: inc/item_patchpanel.class.php:448
 msgid "Add Patch Panel Port"
