@@ -26,7 +26,7 @@
  * --------------------------------------------------------------------------
  */
 
-define('PLUGIN_PATCHPANEL_VERSION', '0.9.4.0');
+define('PLUGIN_PATCHPANEL_VERSION', '0.9.4.1');
 
 /**
  * Init hooks of the plugin.

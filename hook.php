@@ -80,6 +80,14 @@ function plugin_patchpanel_install() {
                ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci";
       $DB->queryOrDie($query, $DB->error());
    }
+   if ($DB->fieldExists("glpi_plugin_patchpanel_patchpanels", "pluginpatchpanelpatchpaneltypes_id")) {
+      $query = "ALTER TABLE glpi_plugin_patchpanel_patchpanels CHANGE pluginpatchpanelpatchpaneltypes_id plugin_patchpanel_patchpaneltypes_id int(11) DEFAULT 0 NOT NULL;";
+      $DB->queryOrDie($query, $DB->error());
+   }
+   if ($DB->fieldExists("glpi_plugin_patchpanel_patchpanels", "pluginpatchpanelpatchpanelmodels_id")) {
+      $query = "ALTER TABLE glpi_plugin_patchpanel_patchpanels CHANGE pluginpatchpanelpatchpanelmodels_id plugin_patchpanel_patchpanelmodels_id int(11) DEFAULT 0 NOT NULL;";
+      $DB->queryOrDie($query, $DB->error());
+   }
 
    if (!$DB->tableExists('glpi_plugin_patchpanel_patchpanelmodels')) {
       //table creation query
