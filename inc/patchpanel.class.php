@@ -106,7 +106,7 @@ class PluginPatchpanelPatchpanel extends CommonDBTM {
       echo "</td>";
       echo "<td>".__('Type')."</td>";
       echo "<td>";
-      PluginPatchpanelPatchpanelType::dropdown(['value' => $this->fields["pluginpatchpanelpatchpaneltypes_id"]]);
+      PluginPatchpanelPatchpanelType::dropdown(['value' => $this->fields["plugin_patchpanel_patchpaneltypes_id"]]);
       echo "</td></tr>";
 
       echo "<tr class='tab_bg_1'>";
@@ -134,7 +134,7 @@ class PluginPatchpanelPatchpanel extends CommonDBTM {
       echo "</td>";
       echo "<td>".__('Model')."</td>";
       echo "<td>";
-      PluginPatchpanelPatchpanelModel::dropdown(['value' => $this->fields["pluginpatchpanelpatchpanelmodels_id"]]);
+      PluginPatchpanelPatchpanelModel::dropdown(['value' => $this->fields["plugin_patchpanel_patchpanelmodels_id"]]);
       echo "</td></tr>";
 
       echo "<tr class='tab_bg_1'>";

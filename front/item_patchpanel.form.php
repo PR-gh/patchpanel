@@ -72,16 +72,13 @@ if (isset($_POST['update'])) {
       unset($input['create_netpoint']);
 
       for ($i=$_POST["from_logical_number"]; $i<=$_POST["to_logical_number"]; $i++) {
-         $add = " - ";
-         if ($i < 10) {
-            $add = "0";
-         }
+         $add = ($i < 10) ? '0': '';
          $input["logical_number"] = $i;
-         $input["name"]           = $_POST["name"].$add.$i;
+         $input["name"]           = (empty($_POST["name"]) ? '' : $_POST["name"].' - ').$add.$i;
          unset($ipp->fields["id"]);
 
          if (isset($_POST["create_netpoint"])) {
-            $inputNetpoint['name'] = $input["name"];
+            $inputNetpoint['name'] = (empty($_POST["name"]) ? $patchPanel->fields['name'] : $_POST["name"]).' - '.$input["name"];
             $idNetpoint = $netpoint->add($inputNetpoint);
             $input['netpoints_id'] = $idNetpoint;
          }
