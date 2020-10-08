@@ -34,7 +34,7 @@ if (!defined('GLPI_ROOT')) {
  * Patch Panel Class
 **/
 class PluginPatchpanelPatchpanel extends CommonDBTM {
-    use DCBreadcrumb;
+    use Glpi\Features\DCBreadcrumb;
 
     // From CommonDBTM
    public $dohistory                   = true;
@@ -54,7 +54,7 @@ class PluginPatchpanelPatchpanel extends CommonDBTM {
 
    function defineTabs($options = []) {
       $ong = [];
-      $this->addDefaultFormTab($ong)
+      $this->addDefaultFormTab($ong, $options)
         ->addStandardTab('PluginPatchpanelItem_Patchpanel', $ong, $options)
         ->addStandardTab('Log', $ong, $options);
 
@@ -185,5 +185,6 @@ class PluginPatchpanelPatchpanel extends CommonDBTM {
       echo "</td></tr><tr></tr>";
 
       $this->showFormButtons($options);
+      return true;
    }
 }
